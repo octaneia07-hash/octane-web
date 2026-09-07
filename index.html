@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Octane | Automatización por WhatsApp para tu negocio</title>
+<meta name="description" content="Octane Catálogo: automatización por WhatsApp que edita tus fotos de producto, controla tu inventario, registra tus ventas y responde como un asesor contable 24/7.">
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+<!-- [EDITAR] Cuando el sitio esté en tu dominio (ej. https://octane.com.co), reemplaza
+     "https://tudominio.com" abajo por esa URL real, para que WhatsApp, Instagram, etc.
+     muestren la tarjeta de vista previa con tu logo y descripción correctos. -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tudominio.com/">
+<meta property="og:title" content="Octane Catálogo">
+<meta property="og:description" content="Automatización por WhatsApp que edita tus fotos de producto, controla tu inventario, registra tus ventas y responde como un asesor contable 24/7.">
+<meta property="og:image" content="https://tudominio.com/assets/logo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Octane Catálogo">
+<meta name="twitter:description" content="Automatización por WhatsApp que edita tus fotos de producto, controla tu inventario, registra tus ventas y responde como un asesor contable 24/7.">
+<meta name="twitter:image" content="https://tudominio.com/assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="container header__row">
+    <a href="#inicio" class="brand">
+      <img src="assets/logo.jpg" alt="Octane" class="brand__logo">
+      <span class="brand__name">OCTANE</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="nav__link">Inicio</a>
+      <a href="#catalogo" class="nav__link">Qué incluye</a>
+      <a href="#manual" class="nav__link">Cómo funciona</a>
+      <a href="#precio" class="nav__link">Precio</a>
+      <a href="#contacto" class="nav__link nav__link--cta">Contáctanos</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="inicio">
+    <div class="hero__glow"></div>
+    <div class="container hero__content reveal">
+      <p class="eyebrow">Automatización por WhatsApp</p>
+      <h1 class="hero__title">Tu catálogo, tu inventario y tus ventas, en un solo chat.</h1>
+      <p class="hero__subtitle">
+        <strong>Octane Catálogo</strong> es la automatización de Octane que edita tus fotos de producto, mantiene tu inventario y tus ventas al día, y responde preguntas sobre tu negocio, todo desde WhatsApp.
+      </p>
+      <div class="hero__actions">
+        <a href="#manual" class="btn btn--primary">Ver cómo funciona</a>
+        <a href="#contacto" class="btn btn--ghost">Hablar con un asesor</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ================= QUÉ INCLUYE ================= -->
+  <section class="section" id="catalogo">
+    <div class="container">
+      <div class="tag reveal">Octane Catálogo</div>
+      <h2 class="section__title reveal">¿Qué incluye el servicio?</h2>
+      <p class="section__lead reveal">
+        Cuatro módulos que trabajan juntos desde un solo chat de WhatsApp: editar, guardar, vender y consultar tu negocio.
+      </p>
+
+      <div class="grid grid--4" id="serviceCards">
+        <button class="card card--service reveal" data-tab="editor">
+          <div class="card__icon">🖼️</div>
+          <span class="card__tag">Editor</span>
+          <h3>Edición de fotos</h3>
+          <p>Convierte fotos de producto en piezas listas para publicar, con tu plantilla de marca.</p>
+          <ul class="card__list">
+            <li>Bot de WhatsApp que recibe foto + datos del producto</li>
+            <li>Edición automática con tu plantilla de marca</li>
+            <li>1 plantilla de diseño personalizada</li>
+            <li>Capacitación básica de uso (5 min)</li>
+          </ul>
+          <span class="card__cta">Ver en acción →</span>
+        </button>
+
+        <button class="card card--service reveal" data-tab="stock">
+          <div class="card__icon">📦</div>
+          <span class="card__tag">Stock</span>
+          <h3>Inventario automático</h3>
+          <p>Cada foto procesada registra el producto en un inventario vivo en Google Sheets.</p>
+          <ul class="card__list">
+            <li>Base de datos en Google Sheets, siempre actualizada</li>
+            <li>Registro automático al procesar cada foto</li>
+            <li>Comando "ingreso" para productos sin foto</li>
+            <li>Comando "corrección" para editar un dato mal ingresado</li>
+            <li>Capacitación de uso del inventario (5 min)</li>
+          </ul>
+          <span class="card__cta">Ver en acción →</span>
+        </button>
+
+        <button class="card card--service reveal" data-tab="venta">
+          <div class="card__icon">💸</div>
+          <span class="card__tag">Venta</span>
+          <h3>Registro de ventas</h3>
+          <p>Registra cada venta en un segundo Google Sheets, vinculado con tu inventario.</p>
+          <ul class="card__list">
+            <li>Segundo Google Sheets de flujo de caja</li>
+            <li>Registro automático de ventas (fecha, producto, monto)</li>
+            <li>El producto sale del inventario al venderse</li>
+            <li>Comando "corrección" para editar un dato mal ingresado</li>
+            <li>Capacitación de uso (5 min)</li>
+          </ul>
+          <span class="card__cta">Ver en acción →</span>
+        </button>
+
+        <button class="card card--service reveal" data-tab="asesor">
+          <div class="card__icon">🤖</div>
+          <span class="card__tag">Asesor</span>
+          <h3>Asesor 24/7</h3>
+          <p>Responde preguntas sobre tu inventario y tus ventas en cualquier momento.</p>
+          <ul class="card__list">
+            <li>Disponible 24/7 vía WhatsApp</li>
+            <li>Se activa con el comando "asesor"</li>
+            <li>Responde preguntas simples y elaboradas</li>
+          </ul>
+          <span class="card__cta">Ver en acción →</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MANUAL INTERACTIVO ================= -->
+  <section class="section section--manual" id="manual">
+    <div class="container">
+      <div class="tag reveal">Manual de usuario</div>
+      <h2 class="section__title reveal">Así se ve trabajar con Octane</h2>
+      <p class="section__lead reveal">Toca cada pestaña para ver una conversación real de WhatsApp con la automatización.</p>
+
+      <div class="manual reveal">
+        <div class="manual__tabs" id="manualTabs" role="tablist">
+          <button class="manual__tab is-active" data-tab="editor" role="tab" aria-selected="true">Editor</button>
+          <button class="manual__tab" data-tab="stock" role="tab" aria-selected="false">Stock</button>
+          <button class="manual__tab" data-tab="venta" role="tab" aria-selected="false">Venta</button>
+          <button class="manual__tab" data-tab="asesor" role="tab" aria-selected="false">Asesor</button>
+        </div>
+
+        <div class="phone">
+          <div class="phone__notch"></div>
+          <div class="phone__header">
+            <img src="assets/logo.jpg" alt="" class="phone__avatar">
+            <div class="phone__headerText">
+              <strong>Octane Bot</strong>
+              <span id="phoneStatus">en línea</span>
+            </div>
+          </div>
+          <div class="phone__body" id="chatBody">
+            <!-- Mensajes inyectados por JS -->
+          </div>
+        </div>
+
+        <p class="manual__howto" id="manualHowto">
+          <strong>Cómo se activa:</strong> Envía por WhatsApp una foto del producto con la información escrita en la imagen (nombre, precio, características). En unos 30 segundos el bot devuelve la foto editada, lista para publicar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRECIO ================= -->
+  <section class="section section--alt" id="precio">
+    <div class="container">
+      <h2 class="section__title reveal">Garantías, instalación y precio</h2>
+
+      <div class="grid grid--2">
+        <div class="feature reveal">
+          <h3>Garantías</h3>
+          <ul class="card__list card__list--lg">
+            <li>45 días de ajustes y correcciones sin costo</li>
+            <li>Corrección de flujo (si falla)</li>
+            <li>Entrega del backup de la automatización al cliente</li>
+          </ul>
+        </div>
+        <div class="feature reveal price-box">
+          <div class="price-box__row">
+            <span class="price-box__label">Tiempo de instalación</span>
+            <span class="price-box__value">5 días hábiles</span>
+          </div>
+          <div class="price-box__row">
+            <span class="price-box__label">Precio</span>
+            <span class="price-box__value price-box__value--accent">$200.000 <small>COP / mes</small></span>
+          </div>
+          <a href="#contacto" class="btn btn--primary btn--block">Quiero Octane Catálogo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTO ================= -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <h2 class="section__title reveal">Hablemos</h2>
+      <p class="section__lead reveal">Escríbenos por WhatsApp y te respondemos directamente.</p>
+
+      <div class="contact-card reveal">
+        <a href="https://wa.me/573023479131?text=Hola%20Octane%2C%20quiero%20informaci%C3%B3n%20sobre%20Octane%20Cat%C3%A1logo"
+           class="btn btn--whatsapp btn--lg" id="whatsappLink" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.55-3.7 8.25-8.25 8.25a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.14.82.84-3.06-.2-.32a8.18 8.18 0 0 1-1.26-4.38c0-4.55 3.7-8.22 8.27-8.22M8.53 6.9c-.16 0-.43.06-.66.31s-.87.86-.87 2.08.89 2.42 1.01 2.58 1.76 2.83 4.38 3.85c2.17.86 2.61.68 3.08.64.47-.04 1.52-.62 1.73-1.22s.21-1.11.15-1.22c-.06-.11-.23-.17-.48-.3s-1.52-.75-1.75-.84-.41-.13-.58.13-.66.84-.81 1.01-.3.19-.55.06a6.86 6.86 0 0 1-2.02-1.25 7.58 7.58 0 0 1-1.4-1.74c-.15-.25-.02-.39.11-.51.11-.11.25-.3.37-.44.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44s-.58-1.4-.8-1.91c-.21-.5-.42-.43-.58-.44z"/></svg>
+          <span>Escríbenos por WhatsApp</span>
+        </a>
+
+        <div class="contact-details">
+          <!-- [EDITAR]: Agrega correo o dirección si los quieres mostrar -->
+          <p>octaneia07@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__row">
+    <div class="brand brand--footer">
+      <img src="assets/logo.jpg" alt="Octane" class="brand__logo">
+      <span class="brand__name">OCTANE</span>
+    </div>
+    <p class="footer__copy">© <span id="year"></span> Octane. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ================= WHATSAPP FLOTANTE ================= -->
+<a href="https://wa.me/573023479131?text=Hola%20Octane%2C%20quiero%20informaci%C3%B3n%20sobre%20Octane%20Cat%C3%A1logo"
+   class="whatsapp-fab" id="whatsappFab" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.2 0 4.26.86 5.82 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.55-3.7 8.25-8.25 8.25a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.14.82.84-3.06-.2-.32a8.18 8.18 0 0 1-1.26-4.38c0-4.55 3.7-8.22 8.27-8.22M8.53 6.9c-.16 0-.43.06-.66.31s-.87.86-.87 2.08.89 2.42 1.01 2.58 1.76 2.83 4.38 3.85c2.17.86 2.61.68 3.08.64.47-.04 1.52-.62 1.73-1.22s.21-1.11.15-1.22c-.06-.11-.23-.17-.48-.3s-1.52-.75-1.75-.84-.41-.13-.58.13-.66.84-.81 1.01-.3.19-.55.06a6.86 6.86 0 0 1-2.02-1.25 7.58 7.58 0 0 1-1.4-1.74c-.15-.25-.02-.39.11-.51.11-.11.25-.3.37-.44.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44s-.58-1.4-.8-1.91c-.21-.5-.42-.43-.58-.44z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
